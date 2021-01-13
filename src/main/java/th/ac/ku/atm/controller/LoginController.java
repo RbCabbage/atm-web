@@ -15,6 +15,10 @@ public class LoginController {
 
     private CustomerService customerService;
 
+    public LoginController(CustomerService customerService) {
+        this.customerService = customerService;
+    }
+
     @GetMapping
     public String getLoginPage() {
         return "login";
