@@ -32,7 +32,7 @@ public class CustomerService {
         }
     }
 
-    public List<Customer> getCustomerList() {
+    public List<Customer> getCustomers() {
         return repository.findAll();
     }
 
