@@ -39,6 +39,7 @@
             <th>CustomerId</th>
             <th>Type</th>
             <th>Balance</th>
+            <th>Actions</th>
         </tr>
         </thead>
         <tbody>
@@ -47,6 +48,7 @@
             <td th:text="${bankacc.customerId}"></td>
             <td th:text="${bankacc.type}"></td>
             <td th:text="${bankacc.balance}"></td>
+            <td><a class="btn btn-primary" th:href="@{/bankaccount/edit/{id}(id=${bankacc.id})}">Edit</a></td>
         </tr>
         </tbody>
     </table>
