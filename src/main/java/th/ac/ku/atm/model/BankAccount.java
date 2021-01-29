@@ -2,6 +2,7 @@ package th.ac.ku.atm.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class BankAccount {
 
     private int id;
@@ -9,13 +10,12 @@ public class BankAccount {
     private String type;
     private double balance;
 
-    @JsonIgnoreProperties(ignoreUnknown = true)
-    public BankAccount(int id, int customerId, String type, double balance) {
-        this.id = id;
-        this.customerId = customerId;
-        this.type = type;
-        this.balance = balance;
-    }
+//    public BankAccount(int id, int customerId, String type, double balance) {
+//        this.id = id;
+//        this.customerId = customerId;
+//        this.type = type;
+//        this.balance = balance;
+//    }
 
     public int getId() {
         return id;
